@@ -179,14 +179,7 @@ namespace WarehouseManagementAPI.Controllers
 
             bool isSuccess = _pkgService.AddProduct(dto);
 
-            if (isSuccess)
-            {
-                return Ok("Product added successfully.");
-            }
-            else
-            {
-                return StatusCode(500, "Failed to add product.");
-            }
+            return Ok(new { message = "Product add successfully." });
         }
 
 

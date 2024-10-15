@@ -131,6 +131,7 @@ namespace WarehouseManagementAPI.CompanyUserRegister
                         // Add parameters for the stored procedure
                         cmd.Parameters.Add("p_username", OracleDbType.Varchar2).Value = manager.UserName;
                         cmd.Parameters.Add("p_password", OracleDbType.Varchar2).Value = manager.Password;
+                        cmd.Parameters.Add("p_nameEmployee", OracleDbType.Varchar2).Value = manager.FirsName;
                         cmd.Parameters.Add("p_lastEmployee", OracleDbType.Varchar2).Value = manager.LastName;
                         cmd.Parameters.Add("p_email", OracleDbType.Varchar2).Value = manager.Email;
                         cmd.Parameters.Add("p_phoneNumber", OracleDbType.Varchar2).Value = manager.PhoneNumber;
